@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/header_footer.css">
+    <link rel="stylesheet" href="./css/result.css">
+    <link rel="icon" href="./img/Logo.png" type="image/x-icon">
+    <title>Result</title>
+
+</head>
+<body>
+    <video src="./img/result_background.mp4" loop autoplay muted class="backgroundVideo">
+        Your browser does not support the video tag.
+    </video>
+    <nav class="nav-bar">
+
+        <img src="./img/Logo.png" alt="Logo" class="logo">
+        
+        <ul class="links">
+            <li><a href="./home.html" target="_self">Home</a></li>
+            <li><a href="./about_us.html" target="_self">About Us</a></li>
+            <li><a href="./logout.html" target="_self">Log out</a></li>
+        </ul>
+        
+    </nav>
+
+    <div class="result">
+        <h1 class="resultHeading">Result</h1>
+        <!-- Result table -->
+        <table id="result_table">
+            <thead>
+                <th>Number</th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>D</th>
+            </thead>
+        </table>
+
+        <p id="errorMessage"></p>
+        
+        <div id="result-description">
+            <p id="score"></p>
+            <p id="firstRank"></p>
+            <p id="secondRank"></p>
+        </div>
+
+        <!-- Color's pages link's -->
+        <div class="color-links">
+            <a href="./orange.html"><button class="link-button orange">Orange</button></a>
+            <a href="./green.html"><button class="link-button green">Green</button></a>
+            <a href="./blue.html"><button class="link-button blue">Blue</button></a>
+            <a href="./gold.html"><button class="link-button gold">Gold</button></a>
+        </div>
+
+    </div>
+
+    <footer>
+        <ul id="developers">
+           <li>Viraj</li>
+           <li>Payal</li>
+           <li>Dil</li>
+           <li>Rohan</li>
+           <li>Reena</li>
+        </ul>
+    </footer>
+     
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/result.js"></script>
+</body>
+</html>

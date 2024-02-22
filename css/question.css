@@ -1,0 +1,160 @@
+.questionBox {
+    color: #FFF;
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    height: 70%;
+    animation: bounce-in-right 1.5s ease-in;
+}
+
+#questionForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+
+.questionDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.image {
+    width: 150px;
+    height: 150px;
+    margin-right: 2rem;
+}
+
+.question {
+    margin: 0.25rem;
+    font-weight: 600;
+    font-size: x-large;
+}
+
+.option {
+    margin: 0.5rem 0.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.option>label {
+    margin: 1% 2%;
+    width: 60%;
+}
+
+.order {
+    margin: 0 2rem;
+}
+
+input[type='radio'] {
+    margin: 0 5px 0;
+}
+
+.nextPrevious {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+    padding: 2% 5%;
+}
+
+#errorMessage {
+    margin: 1rem 0;
+    color: #ffffff;
+    font-weight: 700;
+    border: solid 1px white;
+    text-align: center;
+    display: none;
+}
+
+.linkButton {
+    display: inline-block;
+    background-color: rgb(26, 23, 206);
+    color: #fff;
+    min-width: 15%;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.linkButton:hover {
+    background-color: rgba(26, 23, 206, 0.893);
+    transform: scale(1.1);
+}
+
+/* For the border design. */
+
+.custom-shape-divider-top-1700173089 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -1;
+}
+
+.custom-shape-divider-top-1700173089 svg {
+    position: relative;
+    display: block;
+    width: calc(134% + 1.3px);
+    height: 303px;
+}
+
+.custom-shape-divider-top-1700173089 .shape-fill {
+    fill: #3E2B9AA1;
+}
+
+@media only screen and (max-width: 992px) {
+    .option {
+        flex-direction: column;
+    }
+
+    .option>label {
+        width: 100%;
+    }
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+@keyframes bounce-in-right {
+    0% {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,130 @@
+.backgroundVideo {
+    position: fixed;
+    z-index: -1;
+    bottom: 0;
+
+    min-height: 90%;
+    min-width: 90%;
+}
+
+.result {
+    color: #000;
+    min-width: 50%;
+    min-height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    border: solid #000 1px;
+    animation: bounce 2s ease;
+    backdrop-filter: blur(20px);
+}
+
+.resultHeading {
+    margin-bottom: 1rem;
+}
+
+#result_table,
+th,
+td {
+    border: solid #000 1px;
+    border-collapse: collapse;
+}
+
+#result_table {
+    width: 75%;
+}
+
+th,
+td {
+    width: 15%;
+}
+
+#result-description {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+#errorMessage {
+    margin: 1rem 0;
+    /* color: #ffffff; */
+    font-weight: 700;
+    border: solid 1px #000;
+    text-align: center;
+    display: none;
+    padding: 10%;
+    margin: auto;
+}
+
+.color-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 25px 0;
+    flex-wrap: wrap;
+}
+
+.link-button {
+    width: 100px;
+    display: inline-block;
+    color: #fff;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.link-button:hover {
+    transform: scale(1.1);
+}
+
+a>.link-button {
+    color: #FFFFFF;
+    font-size: medium;
+}
+
+a:hover>.link-button {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+/* Color's button CSS */
+.blue {
+    background-color: rgb(26, 23, 206);
+}
+
+.green {
+    background-color: rgb(0, 100, 0);
+}
+
+.orange {
+    background-color: rgb(255, 140, 0);
+}
+
+.gold {
+    background-color: rgb(212, 175, 55);
+}
+
+/* Animation */
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
